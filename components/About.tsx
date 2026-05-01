@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section
-      id="sobre"
-      className="relative py-16 md:py-2 px-6 overflow-hidden"
-    >
+    <section id="sobre" className="relative py-16 md:py-2 px-6 overflow-hidden">
       {/* Background Decorativo */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-lilac-main/10 blur-[120px] rounded-full -z-10" />
 
@@ -15,7 +12,6 @@ export default function About() {
         {/* Container Superior (Quem Somos) */}
         <div className="backdrop-blur-md bg-white/10 border border-white/40 shadow-2xs rounded-[2.5rem] md:rounded-[4rem] p-8 md:p-16 flex flex-col md:flex-row gap-10 md:gap-16 items-center">
           <div className="flex-1 w-full text-left">
-            
             <h2
               className="text-3xl md:text-5xl font-bold text-slate-800 mt-2 mb-6 leading-tight"
               style={{ fontFamily: "'Playfair Display', serif" }}
@@ -96,7 +92,7 @@ export default function About() {
               desafio para quem vive em serviços de acolhimento, enfrentando a
               invisibilidade social diariamente.
             </p>
-            <p className="mt-6 text-sm uppercase tracking-[0.3em] text-[#37a9f0] font-black text-justify font-['Poppins'] opacity-90">
+            <p className="mt-6 text-sm uppercase tracking-[0.3em] text-[#37a9f0] font-black text-justify font-['Playfair_Display'] opacity-90">
               É aqui que o Instituto Sonho em Viver transforma essa realidade.
               Como diz nosso jingle: nós sonhamos com você. Atuamos para
               devolver a dignidade e o direito ao futuro, tornando visíveis
@@ -144,7 +140,7 @@ export default function About() {
                 </div>
 
                 <div className="absolute right-20 bottom-8 w-28 h-28 md:w-40 md:h-40 rounded-full bg-[#37a9f0]/20 border border-[#60a5fa]/30 flex flex-col items-center justify-center p-4 text-center shadow-lg">
-                  <span className="font-bold text-slate-700 text-m font-['Poppins']"> 
+                  <span className="font-bold text-slate-700 text-m font-['Poppins']">
                     +10.000 sonhos realizados
                   </span>
                 </div>
