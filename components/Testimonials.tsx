@@ -100,12 +100,12 @@ export default function Testimonials() {
               hoje mesmo.
             </p>
 
-            <button className="group relative inline-flex items-center gap-4 px-10 py-5 bg-[#37a9f0] text-white font-black rounded-full shadow-lg hover:shadow-[#37a9f0]/40 transition-all hover:-translate-y-1">
+            <a href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank'className="group relative inline-flex items-center gap-4 px-10 py-5 bg-[#37a9f0] text-white font-black rounded-full shadow-lg hover:shadow-[#37a9f0]/40 transition-all hover:-translate-y-1">
               QUERO ME JUNTAR
               <span className="bg-white/20 rounded-full p-1 group-hover:translate-x-1 transition-transform">
                 →
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

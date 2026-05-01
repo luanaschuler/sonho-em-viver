@@ -36,23 +36,23 @@ export default function Hero() {
           {/* Botão 1 */}
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-lilac-main to-baby-blue rounded-full blur-md opacity-60" />
-            <button className="relative px-6 py-3 bg-white text-slate-800 text-xs md:text-sm font-bold rounded-full shadow-lg flex items-center gap-2 transition-transform hover:scale-105 whitespace-nowrap">
+            <a href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank'className="relative px-6 py-3 bg-white text-slate-800 text-xs md:text-sm font-bold rounded-full shadow-lg flex items-center gap-2 transition-transform hover:scale-105 whitespace-nowrap">
               <span className="w-5 h-5 rounded-full bg-[#37a9f0] flex items-center justify-center text-white text-[10px]">
                 ★
               </span>
               AJUDE AGORA
-            </button>
+            </a>
           </div>
 
           {/* Botão 2 */}
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-lilac-main to-baby-blue rounded-full blur-md opacity-40" />
-            <button className="relative px-6 py-3 bg-white text-slate-800 text-xs md:text-sm font-bold rounded-full shadow-lg flex items-center gap-2 transition-transform hover:scale-105 whitespace-nowrap">
+            <a href="https://instagram.com/sonhoemviver" target='_blank' className="relative px-6 py-3 bg-white text-slate-800 text-xs md:text-sm font-bold rounded-full shadow-lg flex items-center gap-2 transition-transform hover:scale-105 whitespace-nowrap">
               <span className="w-5 h-5 rounded-full bg-[#37a9f0] flex items-center justify-center text-white text-[10px]">
                 ♥
               </span>
               SAIBA MAIS
-            </button>
+            </a>
           </div>
         </div>
       </motion.div>

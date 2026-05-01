@@ -39,23 +39,23 @@ export default function Home() {
         <About />
         <StackedPhotos />
         <ProjectsGrid />
-        <StackedPhotosPart2 />  
+        <StackedPhotosPart2 />
         <Testimonials />
         <StackedPhotosPart3 />
         {/* Garanta que dentro do componente Creators, as fotos não tenham z-index negativo */}
         <Creators />
         <section className="py-20 px-6">
-          <div className="max-w-4xl mx-auto backdrop-blur-none bg-gradient-to-br from-lilac-main/40 to-baby-blue/40 p-12 rounded-[3rem] text-center border border-white/50 shadow-2xl">
-            <h2 className="text-3xl font-bold text-baby-blue mb-6">
+          <div className="max-w-4xl mx-auto backdrop-blur-none bg-linear-to-br from-lilac-main/40 to-baby-blue/40 p-12 rounded-[3rem] text-center border border-white/50 shadow-2xl">
+            <h2 className="text-3xl font-bold text-[#7d148b] mb-6 font-['Playfair_Display'] italic">
               Pronto para fazer parte dessa história?
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white text-baby-blue px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform cursor-pointer">
+              <a href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank' className="bg-transparent text-[#7d148b] px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform cursor-pointer font-['Poppins']">
                 Seja Voluntário
-              </button>
-              <button className="bg-transparent border-2 border-baby-blue text-baby-blue px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-colors cursor-pointer">
+              </a>
+              <a href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank' className="bg-transparent text-[#7d148b] px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform font-['Poppins'] cursor-pointer">
                 Quero Doar
-              </button>
+              </a>
             </div>
           </div>
         </section>

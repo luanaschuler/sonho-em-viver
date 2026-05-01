@@ -54,13 +54,14 @@ export default function Navbar() {
         </div>
 
         {/* --- BOTÃO CTA (Desktop) --- */}
-        <button
+        <a
+        href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank'
           className="hidden lg:block bg-[#37a9f0] text-white px-5 py-2.5 rounded-full text-xs font-black 
             shadow-[0_4px_15px_rgba(55,169,240,0.4)] hover:bg-[#2d91d1] 
             hover:shadow-[0_6px_20px_rgba(55,169,240,0.6)] transition-all active:scale-95"
         >
           DOE AGORA
-        </button>
+        </a>
 
         {/* --- HAMBURGER BUTTON (Mobile/Tablet) --- */}
         <button

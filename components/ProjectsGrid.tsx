@@ -154,23 +154,15 @@ export default function ProjetosAndamento() {
                     >
                       {projeto.titulo}
                     </h3>
-                    <p className="text-sm leading-relaxed opacity-90 mb-8 font-['Poppins']">
+                    <p className="text-m leading-relaxed opacity-90 mb-8 font-['Poppins']">
                       {projeto.descricao}
                     </p>
 
                     <button className="w-full py-4 bg-white text-[#37a9f0] font-black rounded-full shadow-lg hover:scale-105 transition-transform uppercase text-xs tracking-widest">
-                      Quero Ajudar
-                    </button>
-
-                    <button
-                      className="mt-4 w-full text-white/80 text-[10px] font-bold uppercase tracking-widest"
-                      onClick={(event) => {
-                        event.stopPropagation();
-                        toggleFlip(projeto.id);
-                      }}
-                    >
                       Voltar
                     </button>
+
+                    
                   </div>
                 </motion.div>
               </motion.div>
