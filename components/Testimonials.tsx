@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const testimonials = [
@@ -30,16 +31,17 @@ export default function Testimonials() {
 
       <div className="relative mx-auto max-w-7xl">
         {/* CONTAINER GLASSMORPHISM PARA DEPOIMENTOS */}
-        <div className="backdrop-blur-md bg-white/30 border border-white/40 shadow-2xl rounded-[3rem] md:rounded-[4rem] p-8 md:p-16 mb-16">
+        <div className="backdrop-blur-md bg-baby-blue/30 border border-white/40 shadow-2xl rounded-[3rem] md:rounded-[4rem] p-8 md:p-16 mb-16">
           <div className="mb-12 text-center">
-            <span className="text-[#37a9f0] uppercase tracking-[0.4em] text-xs font-black">
+            <span className="text-[#37a9f0] uppercase tracking-[0.4em] text-s font-black">
               Depoimentos
             </span>
             <h2
               className="mt-4 text-3xl md:text-5xl font-bold text-slate-800"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Histórias que <span className="italic">Inspiram</span>
+              Histórias que{" "}
+              <span className="italic text-[#37a9f0]">Inspiram</span>
             </h2>
           </div>
 
@@ -72,16 +74,18 @@ export default function Testimonials() {
         <div className="backdrop-blur-md bg-white/40 border border-white/50 shadow-2xl rounded-[3rem] md:rounded-[4rem] overflow-hidden flex flex-col md:flex-row items-center">
           {/* Lado Esquerdo: Imagem */}
           <div className="w-full md:w-1/2 h-[300px] md:h-[500px]">
-            <img
-              src="/time.jpg" // Substitua pela sua foto de voluntários
+            <Image
+              src="/time.jpg"
               alt="Seja um voluntário"
+              width={600}
+              height={500}
               className="w-full h-full object-cover"
             />
           </div>
 
           {/* Lado Direito: Texto */}
           <div className="w-full md:w-1/2 p-10 md:p-16 text-left">
-            <span className="text-lilac-main font-black tracking-widest uppercase text-xs">
+            <span className="text-lilac-main font-black tracking-widest uppercase text-s">
               Faça a diferença
             </span>
             <h2

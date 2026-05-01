@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -64,9 +65,11 @@ export default function About() {
               viewport={{ once: true }}
               className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border-[12px] border-white/50"
             >
-              <img
+              <Image
                 src="/sabao.jpg"
                 alt="Impacto social"
+                width={400}
+                height={450}
                 className="w-full h-64 md:h-[450px] object-cover hover:scale-110 transition-transform duration-700"
               />
             </motion.div>

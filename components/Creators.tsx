@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -58,9 +59,11 @@ export default function SectionIdealizadores() {
               >
                 {/* Foto Aumentada sobreposta ao card */}
                 <div className="absolute -top-16 left-1/2 -translate-x-1/2 h-40 w-40 overflow-hidden rounded-full border-[6px] border-white shadow-2xl transition-transform duration-500 group-hover:scale-105">
-                  <img
+                  <Image
                     src={pessoa.foto}
                     alt={pessoa.nome}
+                    width={160}
+                    height={160}
                     className="h-full w-full object-cover"
                   />
                 </div>

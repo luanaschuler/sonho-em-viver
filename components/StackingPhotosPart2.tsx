@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 const fotos = [
@@ -51,10 +52,13 @@ const fotoVariants: Variants = {
 
 export default function SpacedStackedPhotos() {
   return (
-    <section className="py-24 bg-[#FAFBFF] flex justify-center items-center overflow-hidden">
+    <section className="pt-8 pb-24 bg-[#FAFBFF] flex justify-center items-center overflow-hidden border-[#37a9f0]/20 border-4">
       <div className="relative w-full max-w-7xl px-6 flex flex-col items-center">
-        <h2 className="mb-16 text-center text-4xl font-bold text-[#2D2A4A]">
-          Momentos que Emocionam
+        <h2 className="mb-16 text-center text-5xl font-bold text-[#2D2A4A] font-[Poppins]">
+          Momentos que{" "}
+          <span className="text-[#37a9f0] font-['Playfair_Display'] italic">
+            Emocionam
+          </span>
         </h2>
 
         {/* CONTAINER PAI (Grid para espalhar as fotos) */}
@@ -76,9 +80,11 @@ export default function SpacedStackedPhotos() {
             >
               {/* A MOLDURA DA FOTO (Glassmorphism sutil) */}
               <div className="bg-white p-2 md:p-3 pb-6 md:pb-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-white/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-                <img
+                <Image
                   src={foto.src}
                   alt={`Foto ${foto.id}`}
+                  width={240}
+                  height={320}
                   className="h-48 w-40 md:h-72 md:w-56 lg:h-80 lg:w-60 object-cover rounded-xl"
                 />
               </div>

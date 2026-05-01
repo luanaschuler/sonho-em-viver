@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import BackgroundClouds from "./BackgroundClouds";
 
@@ -59,9 +60,11 @@ export default function Hero() {
       {/* LADO DIREITO: IMAGEM (50% da largura no desktop) */}
       <div className="relative z-10 flex justify-center md:justify-start w-full px-4">
         <div className="w-full max-w-full lg:max-w-[90%] h-[300px] md:h-[400px] lg:h-[450px] rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
-          <img
+          <Image
             src="/fotohero.jpg"
             alt="foto hero"
+            width={600}
+            height={450}
             className="w-full h-full object-cover"
           />
         </div>

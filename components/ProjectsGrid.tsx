@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 const projetos = [
@@ -9,11 +10,11 @@ const projetos = [
     categoria: "EDUCAÇÃO",
     descricao:
       "Investigamos os sonhos genuínos de pessoas em vulnerabilidade social, identificando o que realmente desejam para suas vidas e criando um plano de ação personalizado.",
-    imagem: "/diadesabao.jpeg",
+    imagem: "/aranha.jpg",
   },
   {
     id: 2,
-    titulo: "O que sonho ser",
+    titulo: "O que Sonho ser",
     categoria: "INFANTIL",
     descricao:
       "Profissionais capacitados vão nas instituições que abriguem menores de idade para incentivar seus sonhos e mostrar novos horizontes.",
@@ -25,7 +26,7 @@ const projetos = [
     categoria: "CUIDADOS",
     descricao:
       "Identifica, dentro de instituições de longa permanência, os desejos e memórias de idosos para realizar sonhos que tragam alegria e paz.",
-    imagem: "/projeto3.jpg",
+    imagem: "/rosas.jpg",
   },
   {
     id: 4,
@@ -33,7 +34,7 @@ const projetos = [
     categoria: "CAMPANHAS",
     descricao:
       "Campanhas especiais como Natal, Páscoa e Dia das Crianças, focadas em criar memórias inesquecíveis através de eventos temáticos.",
-    imagem: "/projeto3.jpg",
+    imagem: "/coelho.jpg",
   },
   {
     id: 5,
@@ -41,7 +42,7 @@ const projetos = [
     categoria: "VOLUNTARIADO",
     descricao:
       "Arrecadação de fundos e apoio para um projeto específico todo mês, mobilizando voluntários para metas rápidas e eficazes.",
-    imagem: "/projeto3.jpg",
+    imagem: "/mensal.jpg",
   },
 ];
 
@@ -62,7 +63,7 @@ export default function ProjetosAndamento() {
   };
 
   return (
-    <section className="relative py-24 px-6 overflow-hidden">
+    <section className="relative py-8 px-6 overflow-hidden">
       {/* Background Decorativo Estilo Glass */}
       <div className="absolute inset-0 bg-white/20 -z-10" />
       <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-lilac-main/10 blur-[120px] rounded-full -z-10" />
@@ -70,22 +71,23 @@ export default function ProjetosAndamento() {
 
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Container Central com Glassmorphism */}
-        <div className="backdrop-blur-md bg-white/30 border border-white/40 shadow-2xl rounded-[3rem] md:rounded-[4rem] p-8 md:p-16">
+        <div className="backdrop-blur-s bg-lilac-main/30 border border-white/40 shadow-2xl rounded-[3rem] md:rounded-[4rem] p-8 md:p-16">
           <div className="mb-16 text-center">
-            <span className="text-[#37a9f0] font-black tracking-widest uppercase text-xs">
+            <span className="text-[#37a9f0] font-black tracking-widest uppercase text-s">
               Portfólio de Amor
             </span>
             <h2
               className="text-4xl md:text-5xl font-bold text-slate-800 mt-2 mb-4"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Projetos em <span className="italic">Andamento</span>
+              Projetos em{" "}
+              <span className="italic font-[#37a9f0]">Andamento</span>
             </h2>
             <div className="mx-auto h-1.5 w-20 rounded-full bg-[#37a9f0]" />
           </div>
 
           <motion.div
-            className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3"
+            className="flex flex-wrap justify-center gap-10" // Mudança aqui: flexbox para centralizar
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -94,7 +96,8 @@ export default function ProjetosAndamento() {
               <motion.div
                 key={projeto.id}
                 variants={cardVariants}
-                className="relative h-[450px] w-full cursor-pointer group"
+                // Definimos a largura baseada na coluna: 100% (mobile), 1/2 (tablet), 1/3 (desktop)
+                className="relative h-[250px] w-full sm:w-[calc(80%-20px)] lg:w-[calc(33.333%-27px)] cursor-pointer group"
                 onClick={() => toggleFlip(projeto.id)}
               >
                 <motion.div
@@ -108,38 +111,31 @@ export default function ProjetosAndamento() {
                     className="absolute inset-0 flex flex-col overflow-hidden rounded-[2.5rem] border border-white/50 bg-white/80 backdrop-blur-lg"
                     style={{ backfaceVisibility: "hidden" }}
                   >
-                    <div className="relative h-full w-full">
-                      <img
+                    <div className="relative h-full w-full overflow-hidden">
+                      {" "}
+                      {/* Adicionado overflow-hidden aqui */}
+                      <Image
                         src={projeto.imagem}
                         alt={projeto.titulo}
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        fill // Faz a imagem ocupar todo o espaço do pai relativo
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        priority={projeto.id <= 3} // Carrega os 3 primeiros cards mais rápido
                       />
                       {/* Overlay Gradiente */}
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
-
                       {/* Conteúdo da Frente */}
-                      <div className="absolute bottom-0 left-0 p-8 w-full">
-                        <span className="text-white/70 text-[10px] font-bold tracking-widest uppercase mb-2 block">
-                          {projeto.categoria}
-                        </span>
+                      <div className="absolute bottom-0 left-0 p-8 w-full z-10">
                         <h3 className="text-2xl font-bold text-white mb-4">
                           {projeto.titulo}
                         </h3>
-
-                        {/* Indicador de Clique/Giro */}
                         <div className="flex items-center gap-2 text-white/90 text-xs font-medium bg-white/20 backdrop-blur-md w-fit px-4 py-2 rounded-full border border-white/30">
-                          <span>Clique para ver detalhes</span>
-                          <motion.span
-                            animate={{ rotate: 360 }}
-                            transition={{
-                              repeat: Infinity,
-                              duration: 4,
-                              ease: "linear",
-                            }}
-                          >
-                            🔄
-                          </motion.span>
+                          <span>CLIQUE AQUI</span>
+
+                          <div className="w-4 h-4 border-t-2 border-r-2 border-white/90 transform rotate-45 animate-ping-slow rounded-sm" />
                         </div>
+
+                        {/* ... restante do indicador de clique ... */}
                       </div>
                     </div>
                   </div>
@@ -168,7 +164,10 @@ export default function ProjetosAndamento() {
 
                     <button
                       className="mt-4 w-full text-white/80 text-[10px] font-bold uppercase tracking-widest"
-                      onClick={() => toggleFlip(projeto.id)}
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        toggleFlip(projeto.id);
+                      }}
                     >
                       Voltar
                     </button>
