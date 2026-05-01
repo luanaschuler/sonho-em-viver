@@ -142,27 +142,29 @@ export default function ProjetosAndamento() {
 
                   {/* VERSO DO CARD (Forte e Vibrante) */}
                   <div
-                    className="absolute inset-0 flex flex-col justify-center rounded-[2.5rem] border border-white/50 bg-gradient-to-br from-[#37a9f0] to-lilac-main p-10 text-white shadow-xl"
+                    className="absolute inset-0 flex flex-col justify-center rounded-[2.5rem] border border-white/50 bg-gradient-to-br from-[#37a9f0] to-lilac-main p-6 sm:p-10 text-white shadow-xl"
                     style={{
                       backfaceVisibility: "hidden",
                       transform: "rotateY(180deg)",
                     }}
                   >
+                    {/* Título: Menor no mobile (2xl), maior no desktop (3xl) */}
                     <h3
-                      className="text-3xl font-bold mb-4"
+                      className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4 leading-tight"
                       style={{ fontFamily: "'Playfair Display', serif" }}
                     >
                       {projeto.titulo}
                     </h3>
-                    <p className="text-m leading-relaxed opacity-90 mb-8 font-['Poppins']">
+
+                    {/* Texto: Menor (xs/sm) no mobile para caber tudo */}
+                    <p className="text-xs sm:text-sm md:text-base leading-relaxed opacity-90 mb-4 sm:mb-8 font-['Poppins'] overflow-y-auto">
                       {projeto.descricao}
                     </p>
 
-                    <button className="w-full py-4 bg-white text-[#37a9f0] font-black rounded-full shadow-lg hover:scale-105 transition-transform uppercase text-xs tracking-widest">
+                    {/* Botão: Padding menor no mobile */}
+                    <button className="w-full py-3 sm:py-4 bg-white text-[#37a9f0] font-black rounded-full shadow-lg hover:scale-105 transition-transform uppercase text-[10px] sm:text-xs tracking-widest mt-auto">
                       Voltar
                     </button>
-
-                    
                   </div>
                 </motion.div>
               </motion.div>

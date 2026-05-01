@@ -123,13 +123,7 @@ export default function Navbar() {
             >
               CONHEÇA OS CRIADORES
             </Link>
-            <Link
-              href="#donos"
-              className="py-3 px-4 text-sm font-bold text-slate-700 hover:text-[#37a9f0] hover:bg-white/30 rounded-lg transition"
-              onClick={closeMenu}
-            >
-              DONOS
-            </Link>
+            
 
             {/* Divider */}
             <div className="h-px bg-white/30" />
