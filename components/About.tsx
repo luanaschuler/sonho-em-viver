@@ -62,7 +62,7 @@ export default function About() {
               className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border-[12px] border-white/50"
             >
               <Image
-                src="/sabao.jpg"
+                src="/sabao.webp"
                 alt="Impacto social"
                 width={400}
                 height={450}
@@ -96,7 +96,7 @@ export default function About() {
               desafio para quem vive em serviços de acolhimento, enfrentando a
               invisibilidade social diariamente.
             </p>
-            <p className="mt-6 text-sm uppercase tracking-[0.3em] text-[#37a9f0] font-black text-justify">
+            <p className="mt-6 text-sm uppercase tracking-[0.3em] text-[#37a9f0] font-black text-justify font-['Poppins'] opacity-90">
               É aqui que o Instituto Sonho em Viver transforma essa realidade.
               Como diz nosso jingle: nós sonhamos com você. Atuamos para
               devolver a dignidade e o direito ao futuro, tornando visíveis
@@ -126,25 +126,25 @@ export default function About() {
 
                 {/* Notícias (Círculos) - Posicionados dentro do overflow-hidden */}
                 <div className="absolute left-16 top-4 w-28 h-28 md:w-36 md:h-36 rounded-full bg-[#37a9f0]/20 border border-[#37a9f0]/30 flex flex-col items-center justify-center p-4 text-center shadow-lg">
-                  <span className="font-bold text-slate-700 text-sm">
+                  <span className="font-bold text-slate-700 text-m font-['Poppins']">
                     Fundado em 2014
                   </span>
                 </div>
 
                 <div className="absolute right-10 top-16 w-36 h-36 md:w-36 md:h-36 rounded-full bg-[#a78bfa]/20 border border-[#a78bfa]/30 flex flex-col items-center justify-center p-4 text-center shadow-lg">
-                  <span className="font-bold text-slate-700 text-sm">
+                  <span className="font-bold text-slate-700 text-m font-['Poppins']">
                     Presente em 12 cidades
                   </span>
                 </div>
 
                 <div className="absolute left-8 bottom-12 w-32 h-32 md:w-36 md:h-36 rounded-full bg-[#a78bfa]/20 border border-[#a78bfa]/30 flex flex-col items-center justify-center p-4 text-center shadow-lg">
-                  <span className="font-bold text-slate-700 text-sm">
+                  <span className="font-bold text-slate-700 text-m font-['Poppins']">
                     Atua em SC e RS
                   </span>
                 </div>
 
                 <div className="absolute right-20 bottom-8 w-28 h-28 md:w-40 md:h-40 rounded-full bg-[#37a9f0]/20 border border-[#60a5fa]/30 flex flex-col items-center justify-center p-4 text-center shadow-lg">
-                  <span className="font-bold text-slate-700 text-sm">
+                  <span className="font-bold text-slate-700 text-m font-['Poppins']"> 
                     +10.000 sonhos realizados
                   </span>
                 </div>

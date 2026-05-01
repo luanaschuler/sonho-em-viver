@@ -61,7 +61,7 @@ export default function Hero() {
       <div className="relative z-10 flex justify-center md:justify-start w-full px-4">
         <div className="w-full max-w-full lg:max-w-[90%] h-[300px] md:h-[400px] lg:h-[450px] rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
           <Image
-            src="/fotohero.jpg"
+            src="/fotohero.webp"
             alt="foto hero"
             width={600}
             height={450}

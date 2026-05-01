@@ -8,18 +8,18 @@ export default function BackgroundClouds() {
       {/* Nuvem esquerda */}
       <motion.div
         animate={{
-          x: [-50, 50, -50],
-          y: [0, 30, 0],
+          x: [-50, 100, -50],
+          y: [0, 0, 0],
         }}
         transition={{
           duration: 10,
           repeat: Infinity,
           ease: "linear",
         }}
-        className="relative top-[10%] left-[5%] w-[35%] opacity-90 blur-sm"
+        className="relative top-[10%] left-[5%] w-[50%] opacity-90 "
       >
         <Image
-          src="/nuvens-fofas.png"
+          src="/novas-nuvens.png"
           alt="Nuvem Perfeita"
           width={500}
           height={300}
@@ -28,7 +28,7 @@ export default function BackgroundClouds() {
       </motion.div>
 
       {/* Nuvem direita (igual à esquerda) */}
-      <motion.div
+      {/* <motion.div
         animate={{
           x: [-50, 50, -50],
           y: [0, 30, 0],
@@ -38,16 +38,16 @@ export default function BackgroundClouds() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute top-[10%] right-[5%] w-[35%] opacity-90 blur-sm"
+        className="absolute top-[10%] right-[5%] w-[35%] opacity-90 "
       >
         <Image
-          src="/nuvens-fofas.png"
+          src="/novas-nuvens.png"
           alt="Nuvem Perfeita"
           width={500}
           height={300}
           className="w-full h-auto"
         />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

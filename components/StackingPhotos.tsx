@@ -3,12 +3,12 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 const fotos = [
-  { id: 1, src: "/capahero.jpg", rotacao: "-12deg", offset: "-30px" },
-  { id: 2, src: "/natal-asilo.jpg", rotacao: "8deg", offset: "0px" },
-  { id: 3, src: "/capahero2.jpg", rotacao: "-6deg", offset: "30px" },
+  { id: 1, src: "/capahero.webp", rotacao: "-12deg", offset: "-30px" },
+  { id: 2, src: "/natal-asilo.webp", rotacao: "8deg", offset: "0px" },
+  { id: 3, src: "/capahero2.webp", rotacao: "-6deg", offset: "30px" },
   {
     id: 4,
-    src: "/natal-kids.jpg",
+    src: "/natal-kids.webp",
     rotacao: "10deg",
     offset: "60px",
   }, // Adicionei mais uma para testar

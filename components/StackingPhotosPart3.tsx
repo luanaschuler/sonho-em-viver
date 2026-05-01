@@ -3,10 +3,10 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 const fotos = [
-  { id: 1, src: "/pascoa1.jpg", rotacao: "-12deg", offset: "-30px" },
-  { id: 2, src: "/boneca.jpg", rotacao: "8deg", offset: "0px" },
-  { id: 3, src: "/pascoa-sra.jpg", rotacao: "-6deg", offset: "30px" },
-  { id: 4, src: "/papai.jpg", rotacao: "10deg", offset: "60px" }, // Adicionei mais uma para testar
+  { id: 1, src: "/pascoa1.webp", rotacao: "-12deg", offset: "-30px" },
+  { id: 2, src: "/boneca.webp", rotacao: "8deg", offset: "0px" },
+  { id: 3, src: "/pascoa-sra.webp", rotacao: "-6deg", offset: "30px" },
+  { id: 4, src: "/papai.webp", rotacao: "10deg", offset: "60px" }, // Adicionei mais uma para testar
 ];
 
 // 1. ANIMAÇÃO BEM MAIS LENTA (Configuração do Pai)

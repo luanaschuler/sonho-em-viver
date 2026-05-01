@@ -10,7 +10,7 @@ const projetos = [
     categoria: "EDUCAÇÃO",
     descricao:
       "Investigamos os sonhos genuínos de pessoas em vulnerabilidade social, identificando o que realmente desejam para suas vidas e criando um plano de ação personalizado.",
-    imagem: "/aranha.jpg",
+    imagem: "/aranha.webp",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projetos = [
     categoria: "INFANTIL",
     descricao:
       "Profissionais capacitados vão nas instituições que abriguem menores de idade para incentivar seus sonhos e mostrar novos horizontes.",
-    imagem: "/minidjj.jpg",
+    imagem: "/minidjj.webp",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const projetos = [
     categoria: "CUIDADOS",
     descricao:
       "Identifica, dentro de instituições de longa permanência, os desejos e memórias de idosos para realizar sonhos que tragam alegria e paz.",
-    imagem: "/rosas.jpg",
+    imagem: "/rosas.webp",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const projetos = [
     categoria: "CAMPANHAS",
     descricao:
       "Campanhas especiais como Natal, Páscoa e Dia das Crianças, focadas em criar memórias inesquecíveis através de eventos temáticos.",
-    imagem: "/coelho.jpg",
+    imagem: "/coelho.webp",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const projetos = [
     categoria: "VOLUNTARIADO",
     descricao:
       "Arrecadação de fundos e apoio para um projeto específico todo mês, mobilizando voluntários para metas rápidas e eficazes.",
-    imagem: "/mensal.jpg",
+    imagem: "/mensal.webp",
   },
 ];
 

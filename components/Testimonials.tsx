@@ -75,7 +75,7 @@ export default function Testimonials() {
           {/* Lado Esquerdo: Imagem */}
           <div className="w-full md:w-1/2 h-[300px] md:h-[500px]">
             <Image
-              src="/time.jpg"
+              src="/time.webp"
               alt="Seja um voluntário"
               width={600}
               height={500}
@@ -96,7 +96,7 @@ export default function Testimonials() {
             </h2>
             <p className="text-slate-600 text-lg mb-8 leading-relaxed font-['Poppins']">
               Precisamos de mãos dispostas e corações abertos. Não importa sua
-              habilidade, seu tempo e carinho podem mudar o destino de alguém
+              habilidade, pois o seu tempo e carinho podem mudar o destino de alguém
               hoje mesmo.
             </p>
 
