@@ -84,7 +84,7 @@ export default function SpacedStackedPhotos() {
               custom={{ customRotate: foto.rotacao, customOffset: foto.offset }}
             >
               {/* A MOLDURA DA FOTO (Glassmorphism sutil) */}
-              <div className="bg-white p-2 md:p-3 pb-6 md:pb-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-white/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              <div className="bg-white p-2 md:p-3 pb-6 md:pb-8 rounded-2xl shadow-xl shadow-blue-900/5 border border-black/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                 <Image
                   src={foto.src}
                   alt={`Foto ${foto.id}`}

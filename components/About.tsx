@@ -79,6 +79,66 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <div className="mt-16 max-w-6xl mx-auto">
+        <div className="grid gap-10 lg:grid-cols-2 items-center">
+          <div>
+            <span className="text-[#37a9f0] font-black tracking-[0.3em] uppercase text-xs mb-3 inline-block">
+              Novidades
+            </span>
+            <h3
+              className="text-3xl md:text-4xl font-bold text-slate-800 mt-4 leading-tight"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              Fique por dentro das últimas ações
+            </h3>
+            <p className="mt-6 text-lg text-slate-600 leading-relaxed font-['Poppins'] opacity-90">
+              Aqui você pode compartilhar notícias rápidas, atualizações de
+              eventos e pequenas vitórias que mostram como o Sonho em Viver
+              transforma realidades.
+            </p>
+            <p className="mt-6 text-sm uppercase tracking-[0.3em] text-[#37a9f0] font-black">
+              Conteúdo novo em destaque
+            </p>
+          </div>
+
+          <div className="relative min-h-[360px] rounded-[2rem] bg-white/80 border border-white/50 shadow-2xl p-6 md:p-8 overflow-hidden">
+            <span className="text-[#37a9f0] font-black tracking-[0.3em] uppercase text-xs mb-3 block">
+              Destaque visual
+            </span>
+
+            <div className="relative h-full pt-4 flex items-center justify-center">
+              <Image
+                src="/logo.png"
+                alt="Logo Sonho em Viver"
+                width={80}
+                height={80}
+                className="relative z-20 rounded-full bg-white p-2 shadow-xl"
+              />
+
+              <div className="absolute left-4 top-8 w-36 h-36 rounded-full bg-[#37a9f0]/10 border border-[#37a9f0]/30 flex items-center justify-center p-4 text-center text-sm text-slate-700 shadow-lg">
+                <span className="font-bold block">Notícia 1</span>
+                <span className="block text-xs mt-1">Novo projeto</span>
+              </div>
+
+              <div className="absolute right-4 top-16 w-44 h-44 rounded-full bg-[#eff6ff] border border-[#37a9f0]/30 flex items-center justify-center p-4 text-center text-sm text-slate-700 shadow-lg">
+                <span className="font-bold block">Notícia 2</span>
+                <span className="block text-xs mt-1">Evento em breve</span>
+              </div>
+
+              <div className="absolute left-8 bottom-10 w-36 h-36 rounded-full bg-[#ede9fe] border border-[#a78bfa]/30 flex items-center justify-center p-4 text-center text-sm text-slate-700 shadow-lg">
+                <span className="font-bold block">Notícia 3</span>
+                <span className="block text-xs mt-1">Gestos de carinho</span>
+              </div>
+
+              <div className="absolute right-10 bottom-12 w-32 h-32 rounded-full bg-[#f8fafc] border border-[#60a5fa]/30 flex items-center justify-center p-4 text-center text-sm text-slate-700 shadow-lg">
+                <span className="font-bold block">Notícia 4</span>
+                <span className="block text-xs mt-1">História viva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

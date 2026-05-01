@@ -5,7 +5,7 @@ import BackgroundClouds from "./BackgroundClouds";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-8 px-6 py-12 md:py-0 overflow-hidden">
+    <section className="relative min-h-[80vh] lg:min-h-[85vh] grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-8 px-6 py-8 md:py-8 overflow-hidden">
       <BackgroundClouds />
 
       {/* LADO ESQUERDO: TEXTO (50% da largura no desktop) */}
