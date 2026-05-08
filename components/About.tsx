@@ -22,9 +22,11 @@ export default function About() {
               </span>
             </h2>
             <p className="font-['Poppins'] text-slate-600 leading-relaxed mb-8 opacity-90 text-lg">
-              A ONG Sonho em Viver nasceu da necessidade de apoiar crianças e
-              famílias em situação de vulnerabilidade, oferecendo não apenas
-              recursos, mas dignidade e perspectiva.
+              O Instituto Sonho em Viver nasceu do desejo de levar esperança,
+              carinho e dignidade a crianças, idosos e famílias em situação de
+              vulnerabilidade. Mais do que oferecer ajuda material, buscamos
+              transformar vidas através do amor, da empatia e da realização de
+              sonhos que renovam a fé no futuro.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -81,23 +83,26 @@ export default function About() {
               className="text-xl md:text-2xl font-bold text-slate-800 mt-4 leading-tight"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Você sabia que somente em SC, 1200 crianças e adolescentes vivem
-              em serviços de acolhimento?
+              Você sabia que, somente em Santa Catarina, mais de 1.200 crianças
+              e adolescentes vivem em serviços de acolhimento? Em todo o Brasil,
+              são mais de 34 mil histórias aguardando uma oportunidade, um
+              recomeço e alguém que acredite em seus sonhos.
             </h3>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed font-['Poppins'] opacity-90 text-justify">
-              Em todo o Brasil, 34 mil vozes aguardam uma oportunidade. Segundo
-              o Instituto Mobilidade e Desenvolvimento Social, a jornada para
-              superar a vulnerabilidade pode levar até nove gerações — um ciclo
-              que muitas vezes silencia a capacidade de sonhar. Imagine esse
-              desafio para quem vive em serviços de acolhimento, enfrentando a
-              invisibilidade social diariamente.
+              Segundo dados do Instituto Mobilidade e Desenvolvimento Social,
+              romper o ciclo da vulnerabilidade social pode levar até nove
+              gerações. Uma realidade dura, que muitas vezes faz com que
+              crianças, adolescentes, idosos e famílias deixem até mesmo de
+              acreditar no próprio futuro.
             </p>
             <p className="mt-6 text-sm uppercase tracking-[0.3em] text-[#37a9f0] font-black text-justify font-['Playfair_Display'] opacity-90">
-              É aqui que o Instituto Sonho em Viver transforma essa realidade.
-              Como diz nosso jingle: nós sonhamos com você. Atuamos para
-              devolver a dignidade e o direito ao futuro, tornando visíveis
-              aqueles que a sociedade escolheu ignorar e provando que, com
-              apoio, todo sonho é alcançável.
+              E é justamente aí que o Instituto Sonho em Viver faz a diferença.
+              Como diz o nosso jingle: “Nós sonhamos com você.” Nossa missão é
+              devolver esperança, dignidade e visibilidade para aqueles que,
+              tantas vezes, são esquecidos pela sociedade. Através de ações
+              sociais, projetos emocionantes e da realização de sonhos,
+              mostramos que, com amor, acolhimento e oportunidade, nenhum sonho
+              é impossível.
             </p>
           </div>
 
