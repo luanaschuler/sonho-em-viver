@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section id="sobre" className="relative py-16 md:py-2 px-6 overflow-hidden">
       {/* Background Decorativo */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-lilac-main/10 blur-[120px] rounded-full -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-lilac-main/10 blur-[120px] rounded-full -z-10" />
 
       <div className="max-w-6xl mx-auto">
         {/* Container Superior (Quem Somos) */}
@@ -55,14 +55,14 @@ export default function About() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border-[12px] border-white/50"
+              className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border-12 border-white/50"
             >
               <Image
                 src="/sabao.webp"
                 alt="Impacto social"
                 width={400}
                 height={450}
-                className="w-full h-64 md:h-[450px] object-cover hover:scale-110 transition-transform duration-700"
+                className="w-full h-64 md:h-112.5 object-cover hover:scale-110 transition-transform duration-700"
               />
             </motion.div>
           </div>
@@ -109,7 +109,7 @@ export default function About() {
             </span>
 
             {/* O Card Branco agora contém apenas os círculos */}
-            <div className="relative h-[480px] w-full rounded-[2rem] overflow-hidden">
+            <div className="relative h-120 w-full rounded-4xl overflow-hidden">
               <div className="relative h-full w-full flex items-center justify-center">
                 {/* Logo Central */}
                 <Image

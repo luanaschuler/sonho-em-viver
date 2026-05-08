@@ -32,7 +32,7 @@ const projetos = [
       "Identifica, dentro de instituições de longa permanência, os desejos e memórias de idosos para realizar sonhos que tragam alegria e paz.",
     imagem: "/rosas.webp",
     modal:
-      "A pergunta que nos fizemos antes de criar este programa foi simples, mas extremamente importante: por que um idoso deveria deixar de fazer aquilo que ama apenas por estar vivendo em uma instituição de acolhimento? Todos nós sabemos que realizar atividades que nos dão prazer aumenta significativamente nossa alegria, autoestima, saúde mental e vontade de viver. Pensando nisso, o Instituto Sonho em Viver desenvolveu um projeto voltado especialmente à valorização da vida e da individualidade dos idosos. Através da atuação de profissionais capacitados, buscamos identificar quais atividades, hábitos e momentos eles mais sentem falta — coisas simples, mas cheias de significado, que faziam parte de suas rotinas antes da institucionalização. A partir dessa escuta sensível, promovemos oficinas, cursos, interações e experiências que resgatam memórias afetivas, estimulam habilidades e devolvem propósito, alegria e qualidade de vida. Porque acreditamos que nunca é tarde para sonhar, viver novas experiências e sentir-se verdadeiramente acolhido. ",
+      "A pergunta que nos fizemos antes de criar este programa foi simples, mas extremamente importante: por que um idoso deveria deixar de fazer aquilo que ama apenas por estar vivendo em uma instituição de acolhimento? \n\ \n\ Todos nós sabemos que realizar atividades que nos dão prazer aumenta significativamente nossa alegria, autoestima, saúde mental e vontade de viver. Pensando nisso, o Instituto Sonho em Viver desenvolveu um projeto voltado especialmente à valorização da vida e da individualidade dos idosos. \n\ \n\ Através da atuação de profissionais capacitados, buscamos identificar quais atividades, hábitos e momentos eles mais sentem falta — coisas simples, mas cheias de significado, que faziam parte de suas rotinas antes da institucionalização. \n\ \n\ A partir dessa escuta sensível, promovemos oficinas, cursos, interações e experiências que resgatam memórias afetivas, estimulam habilidades e devolvem propósito, alegria e qualidade de vida. Porque acreditamos que nunca é tarde para sonhar, viver novas experiências e sentir-se verdadeiramente acolhido.",
   },
   {
     id: 4,
@@ -40,8 +40,8 @@ const projetos = [
     categoria: "CAMPANHAS",
     descricao:
       "Campanhas especiais como Natal, Páscoa e Dia das Crianças, focadas em criar memórias inesquecíveis através de eventos temáticos.",
-    imagem: "/coelho.webp",
-    modal: "O projeto Sonho Cultural nasceu para levar emoção, inclusão e acesso à cultura para pessoas em situação de vulnerabilidade social. Através de parcerias com produtores culturais, artistas, empresas e organizadores de eventos, o Instituto Sonho em Viver proporciona a crianças, idosos e famílias acolhidas por instituições sociais a oportunidade de vivenciarem momentos especiais em espetáculos culturais, apresentações artísticas, shows e outras experiências enriquecedoras nas cidades onde atuamos. Mais do que assistir a um evento, essas pessoas passam a sentir-se incluídas, valorizadas e parte da sociedade, fortalecendo sua autoestima e criando memórias inesquecíveis. Além disso, o projeto também estimula a solidariedade através do “ingresso solidário”, promovendo a arrecadação de donativos que posteriormente são destinados às instituições parceiras atendidas pelo Sonho em Viver. Assim, a cultura se transforma também em uma poderosa ferramenta de amor, impacto social e transformação de vidas. "
+    imagem: "/mensal.webp",
+    modal: "O projeto Sonho Cultural nasceu para levar emoção, inclusão e acesso à cultura para pessoas em situação de vulnerabilidade social. \n\ \n\ Através de parcerias com produtores culturais, artistas, empresas e organizadores de eventos, o Instituto Sonho em Viver proporciona a crianças, idosos e famílias acolhidas por instituições sociais a oportunidade de vivenciarem momentos especiais em espetáculos culturais, apresentações artísticas, shows e outras experiências enriquecedoras nas cidades onde atuamos. \n\ \n\ Mais do que assistir a um evento, essas pessoas passam a sentir-se incluídas, valorizadas e parte da sociedade, fortalecendo sua autoestima e criando memórias inesquecíveis. \n\ \n\ Além disso, o projeto também estimula a solidariedade através do “ingresso solidário”, promovendo a arrecadação de donativos que posteriormente são destinados às instituições parceiras atendidas pelo Sonho em Viver. Assim, a cultura se transforma também em uma poderosa ferramenta de amor, impacto social e transformação de vidas. "
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const projetos = [
     categoria: "VOLUNTARIADO",
     descricao:
       "Arrecadação de fundos e apoio para um projeto específico todo mês, mobilizando voluntários para metas rápidas e eficazes.",
-    imagem: "/mensal.webp",
+    imagem: "/coelho.webp",
     modal: "Mais do que um simples evento ou entrega de presentes, este projeto oferece experiências únicas e inesquecíveis para crianças, idosos e famílias atendidas pelo instituto. São dias preparados com muito amor, repletos de surpresas, diversão, acolhimento e felicidade. Entram nesse projeto, as campanhas de Páscoa, Natal, Dia das Crianças, Dia das mulheres, dentre outros."
   },
 ];
@@ -66,7 +66,11 @@ export default function ProjetosAndamento() {
   const toggleFlip = (id: number) => {
     setFlippedCards((prev) => {
       const newSet = new Set(prev);
-      newSet.has(id) ? newSet.delete(id) : newSet.add(id);
+      if (newSet.has(id)) {
+        newSet.delete(id);
+      } else {
+        newSet.add(id);
+      }
       return newSet;
     });
   };
@@ -75,8 +79,8 @@ export default function ProjetosAndamento() {
     <section className="relative py-8 px-6 overflow-hidden">
       {/* Background Decorativo Estilo Glass */}
       <div className="absolute inset-0 bg-white/20 -z-10" />
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-lilac-main/10 blur-[120px] rounded-full -z-10" />
-      <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-baby-blue/20 blur-[120px] rounded-full -z-10" />
+      <div className="absolute top-0 left-1/4 w-150 h-150 bg-lilac-main/10 blur-[120px] rounded-full -z-10" />
+      <div className="absolute bottom-0 right-1/4 w-150 h-150 bg-baby-blue/20 blur-[120px] rounded-full -z-10" />
 
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Container Central com Glassmorphism */}
@@ -93,6 +97,15 @@ export default function ProjetosAndamento() {
               <span className="italic font-[#37a9f0]">Andamento</span>
             </h2>
             <div className="mx-auto h-1.5 w-20 rounded-full bg-[#37a9f0]" />
+            <h3 className="text-md md:text-sm lg:font-lg font-bold text-justify text-slate-800 mt-6 leading-relaxed font-['Poppins'] max-w-2xl mx-auto">
+              No Instituto Sonho em Viver, cada projeto nasce com um propósito
+              especial: levar esperança, dignidade, acolhimento e emoção para
+              pessoas em situação de vulnerabilidade social. <br /> <br />{" "}
+              Através de ações transformadoras, buscamos mostrar que nenhum
+              sonho é pequeno quando existe amor, empatia e pessoas dispostas a
+              fazer a diferença. Conheça algumas das iniciativas que ajudam a
+              transformar sonhos em realidade todos os dias.
+            </h3>
           </div>
 
           <motion.div
@@ -106,7 +119,7 @@ export default function ProjetosAndamento() {
                 key={projeto.id}
                 variants={cardVariants}
                 // Definimos a largura baseada na coluna: 100% (mobile), 1/2 (tablet), 1/3 (desktop)
-                className="relative h-[250px] w-full sm:w-[calc(80%-20px)] lg:w-[calc(33.333%-27px)] cursor-pointer group"
+                className="relative h-62.5 w-full sm:w-[calc(80%-20px)] lg:w-[calc(33.333%-27px)] cursor-pointer group"
                 onClick={() => toggleFlip(projeto.id)}
               >
                 <motion.div
@@ -132,7 +145,7 @@ export default function ProjetosAndamento() {
                         priority={projeto.id <= 3} // Carrega os 3 primeiros cards mais rápido
                       />
                       {/* Overlay Gradiente */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent" />
                       {/* Conteúdo da Frente */}
                       <div className="absolute bottom-0 left-0 p-8 w-full z-10">
                         <h3 className="text-2xl font-bold text-white mb-4">
@@ -151,7 +164,7 @@ export default function ProjetosAndamento() {
 
                   {/* VERSO DO CARD (Forte e Vibrante) */}
                   <div
-                    className="absolute inset-0 flex flex-col justify-center rounded-[2.5rem] border border-white/50 bg-gradient-to-br from-[#37a9f0] to-lilac-main p-6 sm:p-10 text-white shadow-xl"
+                    className="absolute inset-0 flex flex-col justify-center rounded-[2.5rem] border border-white/50 bg-linear-to-br from-[#37a9f0] to-lilac-main p-6 sm:p-10 text-white shadow-xl"
                     style={{
                       backfaceVisibility: "hidden",
                       transform: "rotateY(180deg)",
@@ -206,19 +219,19 @@ export default function ProjetosAndamento() {
           onClick={() => setModalCardId(null)}
         >
           <div
-            className="bg-lilac-main/90 p-10 rounded-lg max-w-2xl w-full mx-4 shadow-2xl max-h-[80vh] overflow-y-auto "
+            className="bg-white p-10 rounded-4xl border border-gray-300 max-w-2xl w-full mx-4 shadow-2xl max-h-[80vh] overflow-y-auto "
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 className="text-lg font-bold mb-4 font-black tracking-widest text-[#37a9f0] uppercase">
+            <h3 className="text-lg mb-4 font-black tracking-widest text-[#37a9f0] uppercase">
               {projetos.find((p) => p.id === modalCardId)?.titulo}
             </h3>
-            <p className="text-lg font-medium mb-4 font-black tracking-widest text-black/90 text-justify font-['Poppins']">
+            <p className="text-sm mb-4 font-black tracking-widest text-black/90 text-justify font-['Poppins'] whitespace-pre-line">
               {projetos.find((p) => p.id === modalCardId)?.modal}
             </p>
             <div className="flex justify-end">
               <button
                 onClick={() => setModalCardId(null)}
-                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 "
+                className="px-4 py-2 bg-lilac-main text-white rounded hover:bg-lilac-light "
               >
                 Close
               </button>
