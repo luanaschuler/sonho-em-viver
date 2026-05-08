@@ -11,6 +11,8 @@ const projetos = [
     descricao:
       "Investigamos os sonhos genuínos de pessoas em vulnerabilidade social, identificando o que realmente desejam para suas vidas e criando um plano de ação personalizado.",
     imagem: "/aranha.webp",
+    modal:
+      "Um dos projetos mais emocionantes do instituto. Através de um trabalho cuidadoso e investigativo, realizado com apoio de voluntários e profissionais parceiros, descobrimos os verdadeiros sonhos de pessoas em situação de vulnerabilidade — especialmente crianças e pacientes em cuidados paliativos — para transformá-los em momentos inesquecíveis de amor, acolhimento e felicidade.",
   },
   {
     id: 2,
@@ -19,6 +21,8 @@ const projetos = [
     descricao:
       "Profissionais capacitados vão nas instituições que abriguem menores de idade para incentivar seus sonhos e mostrar novos horizontes.",
     imagem: "/minidjj.webp",
+    modal:
+      "Projeto voltado ao incentivo dos sonhos e da construção de futuro para crianças e adolescentes. A iniciativa busca despertar talentos, autoestima e perspectivas de vida, profissionalmente falando, mostrando que acreditar em si mesmo é o primeiro passo para transformar a própria história. ",
   },
   {
     id: 3,
@@ -27,22 +31,26 @@ const projetos = [
     descricao:
       "Identifica, dentro de instituições de longa permanência, os desejos e memórias de idosos para realizar sonhos que tragam alegria e paz.",
     imagem: "/rosas.webp",
+    modal:
+      "A pergunta que nos fizemos antes de criar este programa foi simples, mas extremamente importante: por que um idoso deveria deixar de fazer aquilo que ama apenas por estar vivendo em uma instituição de acolhimento? Todos nós sabemos que realizar atividades que nos dão prazer aumenta significativamente nossa alegria, autoestima, saúde mental e vontade de viver. Pensando nisso, o Instituto Sonho em Viver desenvolveu um projeto voltado especialmente à valorização da vida e da individualidade dos idosos. Através da atuação de profissionais capacitados, buscamos identificar quais atividades, hábitos e momentos eles mais sentem falta — coisas simples, mas cheias de significado, que faziam parte de suas rotinas antes da institucionalização. A partir dessa escuta sensível, promovemos oficinas, cursos, interações e experiências que resgatam memórias afetivas, estimulam habilidades e devolvem propósito, alegria e qualidade de vida. Porque acreditamos que nunca é tarde para sonhar, viver novas experiências e sentir-se verdadeiramente acolhido. ",
   },
   {
     id: 4,
-    titulo: "Um dia de Sonho",
+    titulo: "Sonho Cultural",
     categoria: "CAMPANHAS",
     descricao:
       "Campanhas especiais como Natal, Páscoa e Dia das Crianças, focadas em criar memórias inesquecíveis através de eventos temáticos.",
     imagem: "/coelho.webp",
+    modal: "O projeto Sonho Cultural nasceu para levar emoção, inclusão e acesso à cultura para pessoas em situação de vulnerabilidade social. Através de parcerias com produtores culturais, artistas, empresas e organizadores de eventos, o Instituto Sonho em Viver proporciona a crianças, idosos e famílias acolhidas por instituições sociais a oportunidade de vivenciarem momentos especiais em espetáculos culturais, apresentações artísticas, shows e outras experiências enriquecedoras nas cidades onde atuamos. Mais do que assistir a um evento, essas pessoas passam a sentir-se incluídas, valorizadas e parte da sociedade, fortalecendo sua autoestima e criando memórias inesquecíveis. Além disso, o projeto também estimula a solidariedade através do “ingresso solidário”, promovendo a arrecadação de donativos que posteriormente são destinados às instituições parceiras atendidas pelo Sonho em Viver. Assim, a cultura se transforma também em uma poderosa ferramenta de amor, impacto social e transformação de vidas. "
   },
   {
     id: 5,
-    titulo: "Sonho Mensal",
+    titulo: "Um Dia de Sonho",
     categoria: "VOLUNTARIADO",
     descricao:
       "Arrecadação de fundos e apoio para um projeto específico todo mês, mobilizando voluntários para metas rápidas e eficazes.",
     imagem: "/mensal.webp",
+    modal: "Mais do que um simples evento ou entrega de presentes, este projeto oferece experiências únicas e inesquecíveis para crianças, idosos e famílias atendidas pelo instituto. São dias preparados com muito amor, repletos de surpresas, diversão, acolhimento e felicidade. Entram nesse projeto, as campanhas de Páscoa, Natal, Dia das Crianças, Dia das mulheres, dentre outros."
   },
 ];
 
@@ -53,6 +61,7 @@ const cardVariants: Variants = {
 
 export default function ProjetosAndamento() {
   const [flippedCards, setFlippedCards] = useState<Set<number>>(new Set());
+  const [modalCardId, setModalCardId] = useState<number | null>(null);
 
   const toggleFlip = (id: number) => {
     setFlippedCards((prev) => {
@@ -161,10 +170,27 @@ export default function ProjetosAndamento() {
                       {projeto.descricao}
                     </p>
 
-                    {/* Botão: Padding menor no mobile */}
-                    <button className="w-full py-3 sm:py-4 bg-white text-[#37a9f0] font-black rounded-full shadow-lg hover:scale-105 transition-transform uppercase text-[10px] sm:text-xs tracking-widest mt-auto">
-                      Voltar
-                    </button>
+                    {/* Botões */}
+                    <div className="flex gap-2 mt-auto">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setModalCardId(projeto.id);
+                        }}
+                        className="flex-1 py-2 bg-white/20 text-white font-black rounded-full shadow-lg hover:scale-105 transition-transform uppercase text-[10px] sm:text-xs tracking-widest"
+                      >
+                        SAIBA MAIS
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleFlip(projeto.id);
+                        }}
+                        className="flex-1 py-2 bg-white text-[#37a9f0] font-black rounded-full shadow-lg hover:scale-105 transition-transform uppercase text-[10px] sm:text-xs tracking-widest"
+                      >
+                        Voltar
+                      </button>
+                    </div>
                   </div>
                 </motion.div>
               </motion.div>
@@ -172,6 +198,34 @@ export default function ProjetosAndamento() {
           </motion.div>
         </div>
       </div>
+
+      {/* Modal */}
+      {modalCardId && (
+        <div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 w-full h-full"
+          onClick={() => setModalCardId(null)}
+        >
+          <div
+            className="bg-lilac-main/90 p-10 rounded-lg max-w-2xl w-full mx-4 shadow-2xl max-h-[80vh] overflow-y-auto "
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="text-lg font-bold mb-4 font-black tracking-widest text-[#37a9f0] uppercase">
+              {projetos.find((p) => p.id === modalCardId)?.titulo}
+            </h3>
+            <p className="text-lg font-medium mb-4 font-black tracking-widest text-black/90 text-justify font-['Poppins']">
+              {projetos.find((p) => p.id === modalCardId)?.modal}
+            </p>
+            <div className="flex justify-end">
+              <button
+                onClick={() => setModalCardId(null)}
+                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 "
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

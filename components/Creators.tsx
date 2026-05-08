@@ -6,20 +6,20 @@ import { motion } from "framer-motion";
 const idealizadores = [
   {
     nome: "Adriana Constante",
-    cargo: "Fundadora e Idealizadora",
+    cargo: "Presidente e Idealizadora",
     bio: "Empresária e Idealizadora do Projeto, é figura conhecida na Região por seu engajamento em inúmeras causas sociais desde muito antes do Sonho em Viver. Graças ao seu trabalho perseverante junto ao Sonho em Viver, foi eleita a Blumenauense do Ano em 2023, em uma votação promovida pela NSC TV, obtendo uma expressiva votação.",
     foto: "/adri2.webp",
   },
   {
-    nome: "Cristian Constante",
-    cargo: "Cofundador e Empresário",
-    bio: "Como Marido da Adriana, foi também cofundador do Sonho em Viver. Empresário em duas frentes de negócio, segue participando do Instituto ativamente, colaborando com toda operacionalização das ações, além da logística com o fluxo de doações. Como se não bastasse, Christion também leva alegria através da música e de bons papos para com nossos idosos e crianças, em cada ação.",
+    nome: "Christian Constante",
+    cargo: "Diretor de Eventos ",
+    bio: "Como Marido da Adriana, foi também cofundador do Sonho em Viver. Empresário em duas frentes de negócio, segue participando do Instituto ativamente, colaborando com toda operacionalização das ações, além da logística com o fluxo de doações. Como se não bastasse, Christian também leva alegria através da música e de bons papos para com nossos idosos e crianças em cada ação. ",
     foto: "/cristian2.webp",
   },
   {
     nome: "Marcio Volkmann",
-    cargo: "Cofundador e Compositor",
-    bio: "Assim como a Adriana, também esteve inserido em diversos projetos socias em nossa Blumenau. Atuando como coloborador do Projeto Sonho em Viver praticamente desde o seu início, também é compositor e escritor, tendo composto, dentre outros, o Hino Oficial da Cidade de Blumenau",
+    cargo: "Vice-Presidente",
+    bio: "Assim como a Adriana, também esteve inserido em diversos projetos sociais em nossa Blumenau. Atuando como colaborador do Projeto Sonho em Viver praticamente desde o seu início, também é compositor e escritor, tendo composto, dentre outros, o Hino Oficial da Cidade de Blumenau e o livro 'O Menino que Acordou o Rio'. ",
     foto: "/marcio.webp",
   },
 ];
