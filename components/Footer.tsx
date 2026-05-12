@@ -18,8 +18,7 @@ const iconLinks = [
   },
 ];
 
-const ctaLink =
-  "https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0";
+const ctaLink = "https://institutosonhoemviver.doardigital.com.br/doacao";
 
 export default function Footer() {
   return (

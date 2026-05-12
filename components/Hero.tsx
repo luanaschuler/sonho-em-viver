@@ -5,14 +5,14 @@ import BackgroundClouds from "./BackgroundClouds";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[80vh] lg:min-h-[85vh] grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-8 px-6 py-8 md:py-8 overflow-hidden">
+    <section className="relative min-h-[80vh] lg:min-h-[85vh] grid grid-cols-1 md:grid-cols-[35%_65%] items-center gap-4 md:gap-8 px-6 py-8 md:py-8 overflow-hidden">
       <BackgroundClouds />
 
-      {/* LADO ESQUERDO: TEXTO (50% da largura no desktop) */}
+      {/* LADO ESQUERDO: TEXTO (35% da largura no desktop) */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        className="relative z-10 flex flex-col items-start md:items-end md:text-right p-4 lg:p-12 pt-24 md:pt-4"
+        className="relative z-10 flex flex-col items-start md:items-end md:text-right p-4 lg:p-10 pt-24 md:pt-4 max-w-full md:max-w-[95%]"
       >
         <h1
           className="text-4xl sm:text-5xl lg:text-[72px] text-slate-800 leading-[1.1] mb-4"
@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-lilac-main to-baby-blue rounded-full blur-md opacity-60" />
             <a
-              href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0"
+              href="https://institutosonhoemviver.doardigital.com.br/doacao"
               target="_blank"
               className="relative px-6 py-3 bg-white text-slate-800 text-xs md:text-sm font-bold rounded-full shadow-lg flex items-center gap-2 transition-transform hover:scale-105 whitespace-nowrap"
             >
@@ -65,16 +65,37 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* LADO DIREITO: IMAGEM (50% da largura no desktop) */}
+      {/* LADO DIREITO: IMAGEM E APOIADORES */}
       <div className="relative z-10 flex justify-center md:justify-start w-full px-4">
-        <div className="w-full max-w-full lg:max-w-[90%] h-[300px] md:h-[400px] lg:h-[450px] rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
-          <Image
-            src="/fotohero.webp"
-            alt="foto hero"
-            width={600}
-            height={450}
-            className="w-full h-full object-cover"
-          />
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-full lg:max-w-none">
+          <div className="w-full md:w-[48%] h-[340px] md:h-[520px] lg:h-[560px] rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
+            <Image
+              src="/fotohero.webp"
+              alt="foto hero"
+              width={900}
+              height={650}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="w-full md:w-[52%] flex justify-center">
+            <div className="w-full h-[340px] md:h-[460px] lg:h-[520px] rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/Desktop_apoioadores_720x820.webp"
+                alt="Apoiadores desktop"
+                width={900}
+                height={820}
+                className="hidden md:block w-full h-full object-cover"
+              />
+              <Image
+                src="/Mobile_apoioadores_460x500.webp"
+                alt="Apoiadores mobile"
+                width={460}
+                height={500}
+                className="block md:hidden w-full h-full object-contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
 

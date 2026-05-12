@@ -15,7 +15,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl">
+    <nav className="sticky top-6 z-50 w-[95%] max-w-6xl mx-auto">
       {/* Container com formato "Cloudy" e Glassmorphism */}
       <div
         className="backdrop-blur-md bg-white/30 border border-white/40 shadow-[0_8px_32px_0_rgba(255,255,255,0.3)] 
@@ -55,7 +55,8 @@ export default function Navbar() {
 
         {/* --- BOTÃO CTA (Desktop) --- */}
         <a
-        href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank'
+          href="https://institutosonhoemviver.doardigital.com.br/doacao"
+          target="_blank"
           className="hidden lg:block bg-[#37a9f0] text-white px-5 py-2.5 rounded-full text-xs font-black 
             shadow-[0_4px_15px_rgba(55,169,240,0.4)] hover:bg-[#2d91d1] 
             hover:shadow-[0_6px_20px_rgba(55,169,240,0.6)] transition-all active:scale-95"
@@ -123,20 +124,22 @@ export default function Navbar() {
             >
               CONHEÇA OS CRIADORES
             </Link>
-            
 
             {/* Divider */}
             <div className="h-px bg-white/30" />
 
             {/* CTA Button */}
-            <button
-              className="w-full bg-[#37a9f0] text-white px-5 py-3 rounded-full text-sm font-black 
-                         shadow-[0_4px_15px_rgba(55,169,240,0.4)] hover:bg-[#2d91d1] 
-                         hover:shadow-[0_6px_20px_rgba(55,169,240,0.6)] transition-all active:scale-95"
+            <a
+              href="https://institutosonhoemviver.doardigital.com.br/doacao"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full block text-center bg-[#37a9f0] text-white px-5 py-3 rounded-full text-sm font-black 
+             shadow-[0_4px_15px_rgba(55,169,240,0.4)] hover:bg-[#2d91d1] 
+             hover:shadow-[0_6px_20px_rgba(55,169,240,0.6)] transition-all active:scale-95"
               onClick={closeMenu}
             >
               DOE AGORA
-            </button>
+            </a>
           </div>
         </div>
       )}

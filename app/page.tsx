@@ -2,6 +2,7 @@
 import Navbar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import BannerTop from "@/components/BannerTop";
 import StackedPhotos from "@/components/StackingPhotos";
 import StackedPhotosPart2 from "@/components/StackingPhotosPart2";
 import StackedPhotosPart3 from "@/components/StackingPhotosPart3";
@@ -30,10 +31,11 @@ export default function Home() {
           className="absolute bottom-[20%] right-[5%] w-[500px] h-[500px] bg-baby-blue/20 blur-[120px] rounded-full"
         />
       </div>
-
       {/* 2. CAMADA DE CONTEÚDO (TEXTOS E FOTOS) */}
       {/* O segredo: relative + z-index positivo ALTO */}
       <main className="relative z-20 w-full">
+        <BannerTop />
+
         <Navbar />
         <Hero />
         <About />
@@ -50,10 +52,18 @@ export default function Home() {
               Pronto para fazer parte dessa história?
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank' className="bg-transparent text-[#7d148b] px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform cursor-pointer font-['Poppins']">
+              <a
+                href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0"
+                target="_blank"
+                className="bg-transparent text-[#7d148b] px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform cursor-pointer font-['Poppins']"
+              >
                 Seja Voluntário
               </a>
-              <a href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank' className="bg-transparent text-[#7d148b] px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform font-['Poppins'] cursor-pointer">
+              <a
+                href="https://institutosonhoemviver.doardigital.com.br/doacao"
+                target="_blank"
+                className="bg-transparent text-[#7d148b] px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform font-['Poppins'] cursor-pointer"
+              >
                 Quero Doar
               </a>
             </div>
