@@ -19,7 +19,7 @@ export default function Hero() {
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           Crie Sonhos, <br />
-          <span className="italic">Mude Vidas.</span>
+          <span className="italic">Mude Vidas!</span>
         </h1>
 
         <p className="font-['Poppins'] text-sm md:text-base lg:text-lg text-slate-600 max-w-md mb-6 opacity-90">
