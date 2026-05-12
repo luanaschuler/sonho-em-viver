@@ -95,14 +95,6 @@ export default function Footer() {
                   Conheça os Criadores
                 </a>
               </li>
-              <li>
-                <a
-                  href="#donos"
-                  className="hover:text-[--color-blue] transition-colors"
-                >
-                  Donos
-                </a>
-              </li>
             </ul>
           </div>
 

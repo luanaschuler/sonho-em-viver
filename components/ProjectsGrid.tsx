@@ -41,7 +41,8 @@ const projetos = [
     descricao:
       "Campanhas especiais como Natal, Páscoa e Dia das Crianças, focadas em criar memórias inesquecíveis através de eventos temáticos.",
     imagem: "/mensal.webp",
-    modal: "O projeto Sonho Cultural nasceu para levar emoção, inclusão e acesso à cultura para pessoas em situação de vulnerabilidade social. \n\ \n\ Através de parcerias com produtores culturais, artistas, empresas e organizadores de eventos, o Instituto Sonho em Viver proporciona a crianças, idosos e famílias acolhidas por instituições sociais a oportunidade de vivenciarem momentos especiais em espetáculos culturais, apresentações artísticas, shows e outras experiências enriquecedoras nas cidades onde atuamos. \n\ \n\ Mais do que assistir a um evento, essas pessoas passam a sentir-se incluídas, valorizadas e parte da sociedade, fortalecendo sua autoestima e criando memórias inesquecíveis. \n\ \n\ Além disso, o projeto também estimula a solidariedade através do “ingresso solidário”, promovendo a arrecadação de donativos que posteriormente são destinados às instituições parceiras atendidas pelo Sonho em Viver. Assim, a cultura se transforma também em uma poderosa ferramenta de amor, impacto social e transformação de vidas. "
+    modal:
+      "O projeto Sonho Cultural nasceu para levar emoção, inclusão e acesso à cultura para pessoas em situação de vulnerabilidade social. \n\ \n\ Através de parcerias com produtores culturais, artistas, empresas e organizadores de eventos, o Instituto Sonho em Viver proporciona a crianças, idosos e famílias acolhidas por instituições sociais a oportunidade de vivenciarem momentos especiais em espetáculos culturais, apresentações artísticas, shows e outras experiências enriquecedoras nas cidades onde atuamos. \n\ \n\ Mais do que assistir a um evento, essas pessoas passam a sentir-se incluídas, valorizadas e parte da sociedade, fortalecendo sua autoestima e criando memórias inesquecíveis. \n\ \n\ Além disso, o projeto também estimula a solidariedade através do “ingresso solidário”, promovendo a arrecadação de donativos que posteriormente são destinados às instituições parceiras atendidas pelo Sonho em Viver. Assim, a cultura se transforma também em uma poderosa ferramenta de amor, impacto social e transformação de vidas. ",
   },
   {
     id: 5,
@@ -50,7 +51,8 @@ const projetos = [
     descricao:
       "Arrecadação de fundos e apoio para um projeto específico todo mês, mobilizando voluntários para metas rápidas e eficazes.",
     imagem: "/coelho.webp",
-    modal: "Mais do que um simples evento ou entrega de presentes, este projeto oferece experiências únicas e inesquecíveis para crianças, idosos e famílias atendidas pelo instituto. São dias preparados com muito amor, repletos de surpresas, diversão, acolhimento e felicidade. Entram nesse projeto, as campanhas de Páscoa, Natal, Dia das Crianças, Dia das mulheres, dentre outros."
+    modal:
+      "Mais do que um simples evento ou entrega de presentes, este projeto oferece experiências únicas e inesquecíveis para crianças, idosos e famílias atendidas pelo instituto. São dias preparados com muito amor, repletos de surpresas, diversão, acolhimento e felicidade. Entram nesse projeto, as campanhas de Páscoa, Natal, Dia das Crianças, Dia das mulheres, dentre outros.",
   },
 ];
 
@@ -76,7 +78,7 @@ export default function ProjetosAndamento() {
   };
 
   return (
-    <section className="relative py-8 px-6 overflow-hidden">
+    <section id="projetos" className="relative py-8 px-6 overflow-hidden">
       {/* Background Decorativo Estilo Glass */}
       <div className="absolute inset-0 bg-white/20 -z-10" />
       <div className="absolute top-0 left-1/4 w-150 h-150 bg-lilac-main/10 blur-[120px] rounded-full -z-10" />

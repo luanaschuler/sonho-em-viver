@@ -25,7 +25,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative py-24 px-6 overflow-hidden">
+    <section id="testimonials" className="relative py-24 px-6 overflow-hidden">
       {/* Background Decorativo */}
       <div className="absolute top-0 left-0 w-full h-full bg-white/10 -z-10" />
 
@@ -96,11 +96,15 @@ export default function Testimonials() {
             </h2>
             <p className="text-slate-600 text-lg mb-8 leading-relaxed font-['Poppins']">
               Precisamos de mãos dispostas e corações abertos. Não importa sua
-              habilidade, pois o seu tempo e carinho podem mudar o destino de alguém
-              hoje mesmo.
+              habilidade, pois o seu tempo e carinho podem mudar o destino de
+              alguém hoje mesmo.
             </p>
 
-            <a href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0" target='_blank'className="group relative inline-flex items-center gap-4 px-10 py-5 bg-[#37a9f0] text-white font-black rounded-full shadow-lg hover:shadow-[#37a9f0]/40 transition-all hover:-translate-y-1">
+            <a
+              href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0"
+              target="_blank"
+              className="group relative inline-flex items-center gap-4 px-10 py-5 bg-[#37a9f0] text-white font-black rounded-full shadow-lg hover:shadow-[#37a9f0]/40 transition-all hover:-translate-y-1"
+            >
               QUERO ME JUNTAR
               <span className="bg-white/20 rounded-full p-1 group-hover:translate-x-1 transition-transform">
                 →
