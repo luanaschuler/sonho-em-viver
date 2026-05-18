@@ -18,7 +18,7 @@ export default function TopBanners() {
           className="relative w-full block hover:opacity-90 transition-opacity"
         >
           <NextImage
-            src="/Desktop_Banner1_1920x330.webp"
+            src="/novo_banner.jpeg"
             alt="Banner Principal"
             width={1920} // Dimensão original
             height={330} // Dimensão original
@@ -27,7 +27,7 @@ export default function TopBanners() {
           />
           {/* Mobile */}
           <NextImage
-            src="/Mobile_Banner1_900x930.webp"
+            src="/novo_banner_mobile.jpeg"
             alt="Banner Principal Mobile"
             width={1920} // Dimensão original
             height={330} // Dimensão original
@@ -36,25 +36,7 @@ export default function TopBanners() {
           />
         </Link>
       </div>
-      {/* Segundo Banner */}
-      <div className="relative w-full">
-        {/* Desktop */}
-        <NextImage
-          src="/Desktop_Patrocinadores_1920x220.webp"
-          alt="Banner Patrocinadores"
-          width={1920} // Dimensão original
-          height={220} // Dimensão original
-          className="hidden w-full h-auto md:block"
-        />
-        {/* Mobile */}
-        <NextImage
-          src="/Mobile_Patrocinadores_900x930.webp"
-          alt="Banner Patrocinadores Mobile"
-          width={1920} // Dimensão original
-          height={220} // Dimensão original
-          className="block w-full h-auto md:hidden"
-        />
-      </div>
+
     </section>
   );
 }
