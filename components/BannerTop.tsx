@@ -18,7 +18,7 @@ export default function TopBanners() {
           className="relative w-full block hover:opacity-90 transition-opacity"
         >
           <NextImage
-            src="/novo_banner.jpeg"
+            src="/novo-sonho-desktop.webp"
             alt="Banner Principal"
             width={1920} // Dimensão original
             height={330} // Dimensão original
@@ -27,7 +27,7 @@ export default function TopBanners() {
           />
           {/* Mobile */}
           <NextImage
-            src="/novo_banner_mobile.jpeg"
+            src="/novo-sonho-mobile.webp"
             alt="Banner Principal Mobile"
             width={1920} // Dimensão original
             height={330} // Dimensão original
@@ -36,7 +36,6 @@ export default function TopBanners() {
           />
         </Link>
       </div>
-
     </section>
   );
 }
