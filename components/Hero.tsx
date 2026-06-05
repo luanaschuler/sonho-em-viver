@@ -69,7 +69,7 @@ export default function Hero() {
       {/* LADO DIREITO: IMAGEM E APOIADORES */}
       <div className="relative z-10 flex justify-center md:justify-start w-full px-4 order-2 md:order-2">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-full lg:max-w-none">
-          <div className="w-full md:w-[90%] h-[300px] md:h-[450px] lg:h-[450px] rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
+          <div className="w-full h-[300px] md:h-[350px] lg:h-[450px] rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
             <Image
               src="/homemazul.jpeg"
               alt="foto hero"
