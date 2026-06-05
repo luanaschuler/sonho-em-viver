@@ -34,7 +34,7 @@ export default function About() {
                 whileHover={{ y: -5 }}
                 className="p-6 rounded-3xl bg-[#37a9f0] shadow-[0_10px_20px_rgba(55,169,240,0.3)] border border-white/20"
               >
-                <h4 className="font-black text-3xl text-white">+3.000</h4>
+                <h4 className="font-black text-3xl text-white">+40.000</h4>
                 <p className="text-sm font-bold text-white/90 uppercase tracking-wider">
                   Vidas Impactadas
                 </p>
@@ -44,7 +44,7 @@ export default function About() {
                 whileHover={{ y: -5 }}
                 className="p-6 rounded-3xl bg-lilac-main shadow-[0_10px_20px_rgba(180,150,255,0.3)] border border-white/20"
               >
-                <h4 className="font-black text-3xl text-white">50+</h4>
+                <h4 className="font-black text-3xl text-white">+80</h4>
                 <p className="text-sm font-bold text-white/90 uppercase tracking-wider">
                   Instituições Parceiras
                 </p>
@@ -60,7 +60,7 @@ export default function About() {
               className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border-12 border-white/50"
             >
               <Image
-                src="/sabao.webp"
+                src="/menina.jpeg"
                 alt="Impacto social"
                 width={400}
                 height={450}
@@ -134,13 +134,13 @@ export default function About() {
 
                 <div className="absolute right-10 top-16 w-36 h-36 md:w-36 md:h-36 rounded-full bg-[#a78bfa]/20 border border-[#a78bfa]/30 flex flex-col items-center justify-center p-4 text-center shadow-lg">
                   <span className="font-bold text-slate-700 text-m font-['Poppins']">
-                    Presente em 12 cidades
+                    Presente em 25 cidades
                   </span>
                 </div>
 
                 <div className="absolute left-8 bottom-12 w-32 h-32 md:w-36 md:h-36 rounded-full bg-[#a78bfa]/20 border border-[#a78bfa]/30 flex flex-col items-center justify-center p-4 text-center shadow-lg">
                   <span className="font-bold text-slate-700 text-m font-['Poppins']">
-                    Atua em SC e RS
+                    Atua em SC, RS e PR
                   </span>
                 </div>
 

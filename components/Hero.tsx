@@ -18,8 +18,8 @@ export default function Hero() {
           className="text-4xl sm:text-5xl lg:text-[72px] text-slate-800 leading-[1.1] mb-4"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
-          Crie Sonhos, <br />
-          <span className="italic">Mude Vidas!</span>
+          A Partir de Sonhos, <br />
+          <span className="italic">Transformamos Vidas!</span>
         </h1>
 
         <p className="font-['Poppins'] text-sm md:text-base lg:text-lg text-slate-600 max-w-md mb-6 opacity-90">
@@ -27,8 +27,9 @@ export default function Hero() {
           <strong className="font-['Playfair_Display'] font-bold text-[#37a9f0]">
             Sonho em Viver
           </strong>{" "}
-          e saiba como nós ajudamos crianças e idosos a realizarem sonhos de
-          vida.
+          e descubra como transformamos vidas realizando sonhos de crianças,
+          idosos, pacientes, mulheres em situação de vulnerabilidade e pessoas
+          em situação de rua.
         </p>
 
         {/* GRUPO DE BOTÕES (Menores para caberem lado a lado) */}
@@ -44,7 +45,7 @@ export default function Hero() {
               <span className="w-5 h-5 rounded-full bg-[#37a9f0] flex items-center justify-center text-white text-[10px]">
                 ★
               </span>
-              AJUDE AGORA
+              DOE AGORA!
             </a>
           </div>
 
@@ -68,17 +69,15 @@ export default function Hero() {
       {/* LADO DIREITO: IMAGEM E APOIADORES */}
       <div className="relative z-10 flex justify-center md:justify-start w-full px-4 order-2 md:order-2">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-full lg:max-w-none">
-          <div className="w-full md:w-[90%] h-[340px] md:h-[450px] lg:h-[450px] rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
+          <div className="w-full md:w-[90%] h-[300px] md:h-[450px] lg:h-[450px] rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
             <Image
-              src="/fotohero.webp"
+              src="/homemazul.jpeg"
               alt="foto hero"
               width={900}
               height={650}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fill"
             />
           </div>
-
-          
         </div>
       </div>
 
