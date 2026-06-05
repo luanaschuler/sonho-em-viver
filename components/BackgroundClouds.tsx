@@ -16,7 +16,7 @@ export default function BackgroundClouds() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="relative top-[10%] left-[5%] w-[50%] opacity-90 "
+        className="relative top-[10%] left-[5%] w-[75%] md:w-[50%] opacity-90 "
       >
         <Image
           src="/novas-nuvens.png"
@@ -38,7 +38,7 @@ export default function BackgroundClouds() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute top-[10%] right-[5%] w-[35%] opacity-90 "
+        className="absolute top-[10%] right-[5%] w-[52.5%] md:w-[35%] opacity-90 "
       >
         <Image
           src="/novas-nuvens.png"

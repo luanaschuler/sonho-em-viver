@@ -82,7 +82,7 @@ export default function Hero() {
       </div>
 
       {/* ORBES COLORIDAS */}
-      <div className="absolute top-0 left-[-5%] w-[500px] h-[500px] bg-lilac-main blur-[120px] opacity-30 rounded-full" />
+      <div className="absolute top-0 left-[-5%] w-[500px] h-[500px] bg-lilac-main blur-[120px] opacity-50 rounded-full" />
       <div className="absolute bottom-0 right-[-5%] w-[600px] h-[600px] bg-baby-blue blur-[120px] opacity-70 rounded-full" />
     </section>
   );
