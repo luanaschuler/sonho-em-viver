@@ -21,21 +21,20 @@ export default function Navbar() {
         className="backdrop-blur-md bg-white/30 border border-white/40 shadow-[0_8px_32px_0_rgba(255,255,255,0.3)] 
                       rounded-[2rem] md:rounded-full px-6 py-3 flex justify-between items-center transition-all duration-300"
       >
-        {/* --- LOGO REDUZIDA --- */}
-        <div className="flex items-center">
-          <Link href="/" className="flex items-center" onClick={closeMenu}>
-            <Image
-              src="/logo.png"
-              alt="Logo Sonho em Viver"
-              width={100}
-              height={100}
-              className="object-contain hover:scale-105 transition-transform"
-            />
-          </Link>
-        </div>
+        {/* --- MOBILE CTA (no lugar da logo) --- */}
+        <a
+          href="https://institutosonhoemviver.doardigital.com.br/doacao"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="lg:hidden bg-[#37a9f0] text-white px-4 py-2 rounded-full text-xs font-black 
+            shadow-[0_4px_15px_rgba(55,169,240,0.4)] hover:bg-[#2d91d1] 
+            hover:shadow-[0_6px_20px_rgba(55,169,240,0.6)] transition-all active:scale-95"
+        >
+          DOE AGORA
+        </a>
 
-        {/* --- LINKS (Desktop) --- */}
-        <div className="hidden lg:flex gap-6 lg:gap-8 text-xs lg:text-sm font-bold text-slate-700 tracking-wide">
+        {/* --- LINKS E CTA CENTRALIZADOS (Desktop) --- */}
+        <div className="hidden lg:flex flex-1 items-center justify-center gap-6 lg:gap-8 text-xs lg:text-sm font-bold text-slate-700 tracking-wide">
           <Link href="#sobre" className="hover:text-[#37a9f0] transition">
             SOBRE
           </Link>
@@ -51,18 +50,17 @@ export default function Navbar() {
           <Link href="#creators" className="hover:text-[#37a9f0] transition">
             CONHEÇA OS CRIADORES
           </Link>
+          <a
+            href="https://institutosonhoemviver.doardigital.com.br/doacao"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#37a9f0] text-white px-5 py-2.5 rounded-full text-xs font-black 
+              shadow-[0_4px_15px_rgba(55,169,240,0.4)] hover:bg-[#2d91d1] 
+              hover:shadow-[0_6px_20px_rgba(55,169,240,0.6)] transition-all active:scale-95"
+          >
+            DOE AGORA
+          </a>
         </div>
-
-        {/* --- BOTÃO CTA (Desktop) --- */}
-        <a
-          href="https://institutosonhoemviver.doardigital.com.br/doacao"
-          target="_blank"
-          className="hidden lg:block bg-[#37a9f0] text-white px-5 py-2.5 rounded-full text-xs font-black 
-            shadow-[0_4px_15px_rgba(55,169,240,0.4)] hover:bg-[#2d91d1] 
-            hover:shadow-[0_6px_20px_rgba(55,169,240,0.6)] transition-all active:scale-95"
-        >
-          DOE AGORA
-        </a>
 
         {/* --- HAMBURGER BUTTON (Mobile/Tablet) --- */}
         <button
