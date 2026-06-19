@@ -7,13 +7,13 @@ const idealizadores = [
   {
     nome: "Adriana Constante",
     cargo: "Presidente e Idealizadora",
-    bio: "Empresária e Idealizadora do Projeto, é figura conhecida na Região por seu engajamento em inúmeras causas sociais desde muito antes do Sonho em Viver. Graças ao seu trabalho perseverante junto ao Sonho em Viver, foi eleita a Blumenauense do Ano em 2023, em uma votação promovida pela NSC TV, obtendo uma expressiva votação.",
+    bio: "Empresária e Idealizadora do Projeto, é figura conhecida na Região por seu engajamento em inúmeras causas sociais desde muito antes do Sonho em Viver. Graças ao seu trabalho perseverante junto ao Sonho em Viver, foi eleita a Blumenauense do Ano em 2023, em uma votação promovida pela NSC TV, obtendo uma expressiva votação. Ainda em 2023, através de votação aberta, foi escolhida como Voluntária que a inspira em nível estadual pelo FIESC de SC. Atualmente é embaixadora do movimento Antonietas da NSC TV",
     foto: "/adri2.webp",
   },
   {
     nome: "Christian Constante",
     cargo: "Diretor de Eventos ",
-    bio: "Como Marido da Adriana, foi também cofundador do Sonho em Viver. Empresário em duas frentes de negócio, segue participando do Instituto ativamente, colaborando com toda operacionalização das ações, além da logística com o fluxo de doações. Como se não bastasse, Christian também leva alegria através da música e de bons papos para com nossos idosos e crianças em cada ação. ",
+    bio: "Cofundador do Sonho em Viver. Empresário em duas frentes de negócio, segue participando do Instituto ativamente, colaborando com toda operacionalização das ações, além da logística com o fluxo de doações. Como se não bastasse, Christian também leva alegria através da música e de bons papos para com nossos idosos e crianças em cada ação. ",
     foto: "/cristian2.webp",
   },
   {
