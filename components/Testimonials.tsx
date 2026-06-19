@@ -75,7 +75,7 @@ export default function Testimonials() {
           {/* Lado Esquerdo: Imagem */}
           <div className="w-full md:w-1/2 h-[300px] md:h-[500px]">
             <Image
-              src="/time.webp"
+              src="/image.png"
               alt="Seja um voluntário"
               width={600}
               height={500}
@@ -105,7 +105,7 @@ export default function Testimonials() {
               target="_blank"
               className="group relative inline-flex items-center gap-4 px-10 py-5 bg-[#37a9f0] text-white font-black rounded-full shadow-lg hover:shadow-[#37a9f0]/40 transition-all hover:-translate-y-1"
             >
-              QUERO ME JUNTAR
+              QUERO SER VOLUNTÁRIO!
               <span className="bg-white/20 rounded-full p-1 group-hover:translate-x-1 transition-transform">
                 →
               </span>

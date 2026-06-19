@@ -55,14 +55,14 @@ export default function Home() {
               <a
                 href="https://api.whatsapp.com/send/?phone=554784050409&text&type=phone_number&app_absent=0"
                 target="_blank"
-                className="bg-transparent text-[#7d148b] px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform cursor-pointer font-['Poppins']"
+                className="bg-[#7d148b] text-lilac-main px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform cursor-pointer font-['Poppins']"
               >
                 Seja Voluntário
               </a>
               <a
                 href="https://institutosonhoemviver.doardigital.com.br/doacao"
                 target="_blank"
-                className="bg-transparent text-[#7d148b] px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform font-['Poppins'] cursor-pointer"
+                className="bg-[#7d148b] text-lilac-main px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform font-['Poppins'] cursor-pointer"
               >
                 Quero Doar
               </a>

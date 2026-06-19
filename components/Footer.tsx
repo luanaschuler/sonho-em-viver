@@ -111,13 +111,13 @@ export default function Footer() {
 
               <li className="flex items-center gap-3 text-sm text-slate-500">
                 <Phone size={16} className="text-[--color-lilac-main]" />
-                <span>(47) 8405-0409</span>
+                <span>(47) 98405-0409</span>
               </li>
 
               <li className="flex items-center gap-3 text-sm text-slate-500">
                 <RouteIcon size={24} className="text-[--color-lilac-main]" />
                 <span>
-                  R. Evaldo Eskelsen, 408. Velha Central, Blumenau SC.
+                  R. Evaldo Eskelsen, 407. Velha Central, Blumenau SC.
                   89046-240.
                 </span>
               </li>
