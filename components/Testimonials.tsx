@@ -40,8 +40,8 @@ export default function Testimonials() {
               className="mt-4 text-3xl md:text-5xl font-bold text-slate-800"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Histórias que{" "}
-              <span className="italic text-[#37a9f0]">Inspiram</span>
+              Depoimentos de Quem{" "}
+              <span className="italic text-[#37a9f0]">Sonha Junto</span>
             </h2>
           </div>
 

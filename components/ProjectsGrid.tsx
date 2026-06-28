@@ -9,7 +9,7 @@ const projetos = [
     titulo: "Sonho Genuíno",
     categoria: "EDUCAÇÃO",
     descricao:
-      "Investigamos os sonhos genuínos de pessoas em vulnerabilidade social, identificando o que realmente desejam para suas vidas e criando um plano de ação personalizado.",
+      "Investigamos os sonhos genuínos de pessoas em vulnerabilidade social, e entendemos seus sonhos mais genuínos, buscando na sociedade pessoas que estejam dispostas a realizar estes sonhos",
     imagem: "/aranha.webp",
     modal:
       "Um dos projetos mais emocionantes do instituto. Através de um trabalho cuidadoso e investigativo, realizado com apoio de voluntários e profissionais parceiros, descobrimos os verdadeiros sonhos de pessoas em situação de vulnerabilidade — especialmente crianças e pacientes em cuidados paliativos — para transformá-los em momentos inesquecíveis de amor, acolhimento e felicidade.",
@@ -19,7 +19,7 @@ const projetos = [
     titulo: "O que Sonho ser",
     categoria: "INFANTIL",
     descricao:
-      "Profissionais capacitados vão nas instituições que abriguem menores de idade para incentivar seus sonhos e mostrar novos horizontes.",
+      "Este projeto visa entender habilidades de jovens de abrigos (casas lares) e de comunidades em vulnerabilidade, e aposiando estes jovens através de testes vocacionais aplicados e direcionamento profissional, palestras aplicadas, oficinas, etc",
     imagem: "/minidjj.webp",
     modal:
       "Projeto voltado ao incentivo dos sonhos e da construção de futuro para crianças e adolescentes. A iniciativa busca despertar talentos, autoestima e perspectivas de vida, profissionalmente falando, mostrando que acreditar em si mesmo é o primeiro passo para transformar a própria história. ",
@@ -121,7 +121,7 @@ export default function ProjetosAndamento() {
                 key={projeto.id}
                 variants={cardVariants}
                 // Definimos a largura baseada na coluna: 100% (mobile), 1/2 (tablet), 1/3 (desktop)
-                className="relative h-62.5 w-full sm:w-[calc(80%-20px)] lg:w-[calc(33.333%-27px)] cursor-pointer group"
+                className="relative w-full h-[20rem] sm:h-[10rem] lg:h-[20rem] sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] cursor-pointer group"
                 onClick={() => toggleFlip(projeto.id)}
               >
                 <motion.div
@@ -166,7 +166,7 @@ export default function ProjetosAndamento() {
 
                   {/* VERSO DO CARD (Forte e Vibrante) */}
                   <div
-                    className="absolute inset-0 flex flex-col justify-center rounded-[2.5rem] border border-white/50 bg-linear-to-br from-[#37a9f0] to-lilac-main p-6 sm:p-10 text-white shadow-xl"
+                    className="absolute inset-0 flex flex-col justify-start rounded-[2.5rem] border border-white/50 bg-linear-to-br from-[#37a9f0] to-lilac-main p-6 sm:p-8 text-white shadow-xl overflow-visible"
                     style={{
                       backfaceVisibility: "hidden",
                       transform: "rotateY(180deg)",
@@ -181,7 +181,7 @@ export default function ProjetosAndamento() {
                     </h3>
 
                     {/* Texto: Menor (xs/sm) no mobile para caber tudo */}
-                    <p className="text-xs sm:text-sm md:text-base leading-relaxed opacity-90 mb-4 sm:mb-8 font-['Poppins'] overflow-y-auto">
+                    <p className="text-xs sm:text-sm md:text-base leading-relaxed opacity-90 mb-4 sm:mb-6 font-['Poppins'] whitespace-normal break-words">
                       {projeto.descricao}
                     </p>
 
